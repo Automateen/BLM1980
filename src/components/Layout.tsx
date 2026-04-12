@@ -28,11 +28,13 @@ export default function Layout() {
       >
         <Link
           to="/"
-          className={`text-xl font-bold uppercase tracking-widest transition-colors ${
-            scrolled ? 'text-primary' : 'text-surface'
-          }`}
+          className="flex items-center"
         >
-          BLM1980 YACHT
+          <img 
+            src="/logo.png" 
+            alt="BLM1980 Yacht Logo" 
+            className="h-12 md:h-14 w-auto transition-all duration-500"
+          />
         </Link>
 
         <div className="hidden md:flex items-center gap-10 font-headline tracking-tight">
@@ -71,8 +73,8 @@ export default function Layout() {
 
       <footer className="w-full relative mt-20 bg-surface pt-20 pb-10">
         <div className="max-w-7xl mx-auto px-12 flex flex-col items-center gap-12">
-          <div className="text-lg font-bold text-primary uppercase tracking-widest">
-            BLM1980 YACHT
+          <div className="flex flex-col items-center">
+            <img src="/logo.png" alt="BLM1980 Yacht Logo" className="h-20 w-auto" />
           </div>
           <div className="flex flex-wrap justify-center gap-12">
             {['Chárter', 'Ventas', 'Gestión', 'Privacidad', 'Términos'].map((item) => (
