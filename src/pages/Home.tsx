@@ -16,11 +16,11 @@ export default function Home() {
           <div className="absolute inset-0 bg-primary/20"></div>
         </div>
         <div className="relative z-10 text-center px-4 max-w-5xl">
-          <h1 className="font-headline text-5xl md:text-8xl text-white mb-6 tracking-tight leading-tight">
-            El Mediterráneo, <br /> <span className="italic">Redefinido</span>
+          <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl text-white mb-6 tracking-tight leading-tight">
+            Donde el mar se <br /> convierte en <span className="italic">experiencia</span>
           </h1>
-          <p className="font-body text-white/90 text-lg md:text-xl uppercase tracking-[0.3em] font-light">
-            CURANDO LAS TRAVESÍAS NÁUTICAS MÁS EXCLUSIVAS DEL MUNDO.
+          <p className="font-body text-white/90 text-[10px] md:text-sm uppercase tracking-[0.3em] font-light max-w-3xl mx-auto leading-relaxed">
+            CHÁRTER, COMPRAVENTA, REFIT Y GESTIÓN INTEGRAL DE EMBARCACIONES CON MÁS DE 20 AÑOS DE EXPERIENCIA.
           </p>
         </div>
         <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 text-white/60">
@@ -34,11 +34,11 @@ export default function Home() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-y-12">
           <div className="md:col-span-5 flex flex-col justify-center">
             <h2 className="font-headline text-4xl md:text-6xl mb-8 leading-tight">
-              Un Legado de <br />Lujo Invisible.
+              Experiencia que <br />se nota en cada travesía.
             </h2>
             <div className="w-24 h-px bg-primary mb-8"></div>
             <p className="text-on-surface-variant leading-relaxed text-lg mb-8 max-w-md">
-              No nos limitamos a facilitar transacciones; curamos estilos de vida. BLM1980 YACHT representa la cúspide de la excelencia marítima, sirviendo a una clientela exigente que no demanda nada menos que lo extraordinario.
+              En BLM1980 Yacht no solo trabajamos con barcos, trabajamos con confianza. Llevamos más de dos décadas ayudando a propietarios y clientes a disfrutar del mar con total tranquilidad. Desde el alquiler de embarcaciones hasta la gestión integral y mantenimiento, ofrecemos un servicio completo, profesional y adaptado a cada necesidad.
             </p>
             <a
               href="#"
@@ -67,16 +67,16 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
             <div>
               <span className="text-on-tertiary-container font-bold uppercase tracking-[0.3em] text-xs mb-4 block font-label">
-                Nuestra Experiencia
+                Nuestros Servicios
               </span>
-              <h2 className="font-headline text-4xl md:text-5xl">Servicios a Medida</h2>
+              <h2 className="font-headline text-4xl md:text-5xl">Servicios Integrales</h2>
             </div>
             <p className="max-w-sm text-on-surface-variant font-light">
-              Soluciones integrales adaptadas a los requisitos únicos del mundo del yachting.
+              Soluciones completas y profesionales para disfrutar del mar con total tranquilidad.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-8">
             {/* Charter */}
             <Link to="/servicios" className="group cursor-pointer block">
               <div className="aspect-[3/4] overflow-hidden mb-8">
@@ -89,13 +89,13 @@ export default function Home() {
               </div>
               <h3 className="font-headline text-2xl mb-4">Chárter</h3>
               <p className="text-on-surface-variant mb-6 font-light leading-relaxed">
-                Itinerarios exquisitos y tripulaciones seleccionadas a mano para la escapada definitiva al Mediterráneo.
+                Alquiler de embarcaciones y experiencias a medida, desde salidas de día hasta travesías completas.
               </p>
               <ArrowRight className="text-primary group-hover:translate-x-2 transition-transform w-6 h-6" />
             </Link>
 
             {/* Sales */}
-            <Link to="/servicios" className="group cursor-pointer block md:mt-16">
+            <Link to="/servicios" className="group cursor-pointer block md:mt-12 lg:mt-16">
               <div className="aspect-[3/4] overflow-hidden mb-8">
                 <img
                   alt="Servicio de Venta"
@@ -104,9 +104,9 @@ export default function Home() {
                   referrerPolicy="no-referrer"
                 />
               </div>
-              <h3 className="font-headline text-2xl mb-4">Venta</h3>
+              <h3 className="font-headline text-2xl mb-4">Venta y Corretaje</h3>
               <p className="text-on-surface-variant mb-6 font-light leading-relaxed">
-                Servicios de corretaje discretos que conectan embarcaciones exclusivas con sus próximos custodios.
+                Asesoramiento experto para comprar o vender su embarcación con total seguridad.
               </p>
               <ArrowRight className="text-primary group-hover:translate-x-2 transition-transform w-6 h-6" />
             </Link>
@@ -121,12 +121,60 @@ export default function Home() {
                   referrerPolicy="no-referrer"
                 />
               </div>
-              <h3 className="font-headline text-2xl mb-4">Gestión</h3>
+              <h3 className="font-headline text-2xl mb-4">Consultoría y Gestión</h3>
               <p className="text-on-surface-variant mb-6 font-light leading-relaxed">
-                Excelencia operativa impecable y supervisión técnica para su tranquilidad en el mar.
+                Gestión integral de barcos: mantenimiento, tripulación, amarre y control operativo.
               </p>
               <ArrowRight className="text-primary group-hover:translate-x-2 transition-transform w-6 h-6" />
             </Link>
+
+            {/* Refit y Mantenimiento */}
+            <Link to="/servicios" className="group cursor-pointer block md:mt-12 lg:mt-16">
+              <div className="aspect-[3/4] overflow-hidden mb-8">
+                <img
+                  alt="Servicio de Refit y Mantenimiento"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  src="https://images.unsplash.com/photo-1551608405-3e289bf53b93?q=80&w=2030"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+              <h3 className="font-headline text-2xl mb-4">Refit y Mantenimiento</h3>
+              <p className="text-on-surface-variant mb-6 font-light leading-relaxed">
+                Reformas, mantenimiento técnico y puesta a punto para garantizar el máximo rendimiento y durabilidad.
+              </p>
+              <ArrowRight className="text-primary group-hover:translate-x-2 transition-transform w-6 h-6" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Process/Methodology Section */}
+      <section className="py-20 md:py-32 bg-primary-container text-surface">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          <div className="text-center mb-16 md:mb-24">
+            <h2 className="font-headline text-4xl md:text-5xl mb-6">Nuestro método de trabajo</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div className="space-y-6">
+              <span className="font-headline text-5xl opacity-20">01</span>
+              <h4 className="font-bold tracking-widest uppercase text-xs border-b border-surface/10 pb-4 font-label">Asesoramiento</h4>
+              <p className="text-surface/70 text-sm leading-loose">Analizamos sus necesidades: tipo de embarcación, uso, presupuesto y objetivos.</p>
+            </div>
+            <div className="space-y-6">
+              <span className="font-headline text-5xl opacity-20">02</span>
+              <h4 className="font-bold tracking-widest uppercase text-xs border-b border-surface/10 pb-4 font-label">Selección</h4>
+              <p className="text-surface/70 text-sm leading-loose">Le presentamos opciones contrastadas, optimizando tiempo y evitando decisiones innecesarias.</p>
+            </div>
+            <div className="space-y-6">
+              <span className="font-headline text-5xl opacity-20">03</span>
+              <h4 className="font-bold tracking-widest uppercase text-xs border-b border-surface/10 pb-4 font-label">Gestión y Mante.</h4>
+              <p className="text-surface/70 text-sm leading-loose">Coordinamos toda la operativa: contratos, logística, mantenimiento y refit.</p>
+            </div>
+            <div className="space-y-6">
+              <span className="font-headline text-5xl opacity-20">04</span>
+              <h4 className="font-bold tracking-widest uppercase text-xs border-b border-surface/10 pb-4 font-label">Seguimiento</h4>
+              <p className="text-surface/70 text-sm leading-loose">Continuamos a su lado con soporte, mantenimiento y mejora continua.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -143,20 +191,15 @@ export default function Home() {
         </div>
         <div className="relative z-10 max-w-4xl mx-auto text-center">
           <h2 className="font-headline text-4xl md:text-7xl mb-12 leading-tight">
-            Comience su Viaje <span className="italic">Curado</span>
+            Su barco, en las <span className="italic">mejores manos</span>
           </h2>
+          <p className="text-white/80 mb-12 text-lg md:text-xl font-light">Contacte con nosotros y descubra una forma más sencilla y profesional de gestionar y disfrutar del mar.</p>
           <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
             <Link
               to="/contacto"
               className="w-full md:w-auto bg-[#faf9f5] text-[#001325] px-12 py-5 uppercase tracking-widest text-sm font-bold hover:bg-secondary-container transition-colors font-label"
             >
-              Solicitar Consulta
-            </Link>
-            <Link
-              to="/servicios"
-              className="w-full md:w-auto border border-white/30 text-white px-12 py-5 uppercase tracking-widest text-sm font-bold hover:bg-white/10 transition-colors font-label"
-            >
-              Ver Flota
+              Solicitar consultoría
             </Link>
           </div>
         </div>
