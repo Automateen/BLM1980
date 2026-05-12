@@ -20,7 +20,7 @@ export default function Contact() {
               Conecte con la Excelencia
             </span>
             <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl tracking-tighter text-surface leading-[0.9] mb-6">
-              Comience su <br />
+              Comienza tu <br />
               <span className="italic">viaje a medida.</span>
             </h1>
           </div>
@@ -74,7 +74,7 @@ export default function Contact() {
 
           {/* Inquiry Form */}
           <div className="lg:col-span-8 bg-surface-container-low p-8 md:p-16">
-            <h2 className="font-headline text-3xl mb-12">Envíe su consulta</h2>
+            <h2 className="font-headline text-3xl mb-12">Envía tu consulta</h2>
             <form className="space-y-10" onSubmit={(e) => e.preventDefault()}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <div className="relative">
@@ -129,7 +129,7 @@ export default function Contact() {
                 </label>
                 <textarea
                   className="luxury-input resize-none"
-                  placeholder="Describa su visión para la experiencia marítima perfecta..."
+                  placeholder="Describe tu visión para la experiencia marítima perfecta..."
                   rows={4}
                 ></textarea>
               </div>
@@ -161,7 +161,7 @@ export default function Contact() {
         <div className="absolute inset-0 flex items-center justify-center text-center">
           <div className="max-w-2xl px-6">
             <h2 className="text-surface font-headline text-4xl md:text-6xl mb-8 leading-tight">
-              El horizonte le está esperando.
+              El horizonte te está esperando.
             </h2>
             <p className="text-surface/80 font-label tracking-widest text-sm uppercase">
               Curando lo extraordinario desde 1980

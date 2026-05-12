@@ -106,7 +106,7 @@ export default function Home() {
               </div>
               <h3 className="font-headline text-2xl mb-4">Venta y Corretaje</h3>
               <p className="text-on-surface-variant mb-6 font-light leading-relaxed">
-                Asesoramiento experto para comprar o vender su embarcación con total seguridad.
+                Asesoramiento experto para comprar o vender tu embarcación con total seguridad.
               </p>
               <ArrowRight className="text-primary group-hover:translate-x-2 transition-transform w-6 h-6" />
             </Link>
@@ -121,7 +121,7 @@ export default function Home() {
                   referrerPolicy="no-referrer"
                 />
               </div>
-              <h3 className="font-headline text-2xl mb-4">Consultoría y Gestión</h3>
+              <h3 className="font-headline text-2xl mb-4">Gestión técnica y operativa</h3>
               <p className="text-on-surface-variant mb-6 font-light leading-relaxed">
                 Gestión integral de barcos: mantenimiento, tripulación, amarre y control operativo.
               </p>
@@ -158,12 +158,12 @@ export default function Home() {
             <div className="space-y-6">
               <span className="font-headline text-5xl opacity-20">01</span>
               <h4 className="font-bold tracking-widest uppercase text-xs border-b border-surface/10 pb-4 font-label">Asesoramiento</h4>
-              <p className="text-surface/70 text-sm leading-loose">Analizamos sus necesidades: tipo de embarcación, uso, presupuesto y objetivos.</p>
+              <p className="text-surface/70 text-sm leading-loose">Analizamos tus necesidades: tipo de embarcación, uso, presupuesto y objetivos.</p>
             </div>
             <div className="space-y-6">
               <span className="font-headline text-5xl opacity-20">02</span>
               <h4 className="font-bold tracking-widest uppercase text-xs border-b border-surface/10 pb-4 font-label">Selección</h4>
-              <p className="text-surface/70 text-sm leading-loose">Le presentamos opciones contrastadas, optimizando tiempo y evitando decisiones innecesarias.</p>
+              <p className="text-surface/70 text-sm leading-loose">Te presentamos opciones contrastadas, optimizando tiempo y evitando decisiones innecesarias.</p>
             </div>
             <div className="space-y-6">
               <span className="font-headline text-5xl opacity-20">03</span>
@@ -173,7 +173,7 @@ export default function Home() {
             <div className="space-y-6">
               <span className="font-headline text-5xl opacity-20">04</span>
               <h4 className="font-bold tracking-widest uppercase text-xs border-b border-surface/10 pb-4 font-label">Seguimiento</h4>
-              <p className="text-surface/70 text-sm leading-loose">Continuamos a su lado con soporte, mantenimiento y mejora continua.</p>
+              <p className="text-surface/70 text-sm leading-loose">Continuamos a tu lado con soporte, mantenimiento y mejora continua.</p>
             </div>
           </div>
         </div>
@@ -191,9 +191,9 @@ export default function Home() {
         </div>
         <div className="relative z-10 max-w-4xl mx-auto text-center">
           <h2 className="font-headline text-4xl md:text-7xl mb-12 leading-tight">
-            Su barco, en las <span className="italic">mejores manos</span>
+            Tu barco, en las <span className="italic">mejores manos</span>
           </h2>
-          <p className="text-white/80 mb-12 text-lg md:text-xl font-light">Contacte con nosotros y descubra una forma más sencilla y profesional de gestionar y disfrutar del mar.</p>
+          <p className="text-white/80 mb-12 text-lg md:text-xl font-light">Contacta con nosotros y descubre una forma más sencilla y profesional de gestionar y disfrutar del mar.</p>
           <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
             <Link
               to="/contacto"

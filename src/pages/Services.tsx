@@ -17,10 +17,10 @@ export default function Services() {
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12 pb-24">
           <div className="max-w-4xl">
             <span className="block text-surface uppercase tracking-[0.4em] text-sm mb-6 opacity-80 font-label">
-              Soluciones Marítimas Refinadas
+              Soluciones Marítimas
             </span>
-            <h1 className="font-headline text-5xl md:text-7xl lg:text-9xl text-surface leading-[0.9] tracking-tighter italic">
-              Más allá del <br /> Horizonte
+            <h1 className="font-headline text-5xl md:text-6xl lg:text-8xl text-surface leading-[0.9] tracking-tighter italic">
+              Servicios náuticos <br /> a tu medida
             </h1>
           </div>
         </div>
@@ -53,7 +53,7 @@ export default function Services() {
               <div className="aspect-[4/5] overflow-hidden">
                 <img
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDX1EpCXtsT25o7cPCH5PWSkrUfNtp9b5Xc3jag3uyYMk3t6ilWaTz3tyB2H_JBu4-GrweFbI8F1JuFrdCbScQkhDSEtgxMiu5KR9xA069fodDHz_Rk6MhkmA3p41beIDtAFNIT08IbZWY8W4uyBlmSmyXfbx5ohFH9Er79fgqDsJwb-3f6jUy-BPDaQwRdlv1zSOZpfCrOpozBK6cHZz1sJkP5galjwZ0wiJbwE22j9Ph6RUzL1BbKgsj9flks5icqx662iHnLQhGy"
+                  src="/Charter.jpg"
                   alt="Sun-drenched luxury yacht deck"
                   referrerPolicy="no-referrer"
                 />
@@ -77,7 +77,7 @@ export default function Services() {
               <div className="aspect-[3/4] overflow-hidden">
                 <img
                   className="w-full h-full object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuEMK2wnFn7jJKDI4Ul-uOb02kAn9TeTfzhB3ZiAPzXtWxLn9LMnywKmdtdo7Sss6Ch0gr9v1Va_usOdoAp1O0MOsfFgWYKLS_AymleFhalqlgIXkhayB4iOwKpK-uUSE84-MWemtw49ErZlnsfyeW8EDe0OCAFymWwwlVh8B6lefxvyjTk5OXWBGkl2fNKpCXxBsZe99Yzm7Z2eTgnFTnphj6XxNnGmP5rvLbwE9yVgsHkcoIN0_ODTIAt6V5SQ9Ojat_p4IuehHh"
+                  src="/corretaje.jpg"
                   alt="Minimalist architectural detail of a superyacht stern"
                   referrerPolicy="no-referrer"
                 />
@@ -102,9 +102,9 @@ export default function Services() {
           <div className="bg-surface-container-low p-8 md:p-24 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div>
               <span className="text-on-tertiary-container font-semibold tracking-widest text-xs uppercase mb-4 block font-label">Excelencia Operativa</span>
-              <h3 className="font-headline text-4xl md:text-5xl text-primary mb-8 leading-tight">Consultoría y Gestión</h3>
+              <h3 className="font-headline text-4xl md:text-5xl text-primary mb-8 leading-tight">Gestión técnica y operativa</h3>
               <p className="text-primary/70 leading-relaxed text-lg mb-8">
-                Ofrecemos un servicio integral de gestión de embarcaciones. Nos ocupamos del mantenimiento, la coordinación de tripulación, la logística y la supervisión técnica, asegurando que su barco esté siempre en perfecto estado.
+                Ofrecemos un servicio integral de gestión de embarcaciones. Nos ocupamos del mantenimiento, la coordinación de tripulación, la logística y la supervisión técnica, asegurando que tu barco esté siempre en perfecto estado.
               </p>
               <div className="grid grid-cols-2 gap-8 border-t border-outline-variant/30 pt-8">
                 <div>
@@ -120,7 +120,7 @@ export default function Services() {
             <div className="relative">
               <img
                 className="w-full aspect-video md:aspect-square object-cover shadow-2xl"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOzju8kieqkn7tuhtRIqdjsQUQ0vWs-dBu9129eJqfPRGggNRM34pNnr1j3Yj8vaOeEqnVxP9oNpSkcOQMDfVAQzkq--NTsD7ggu-QkGXc4LJDAysDAevVqT9ihTVygI_6_dxFuPnHd6rHMwgRCVzWtb7qBeKQ1dSgBgwQtEyL-4SCvIE79_QLxs-BaPS43Nh7NJjePADDb6w9rkVoTG1rcOK9kOSLVF569ZVfpjyp0cZiMHJk9ZvvyKvZYO-Va0y1p5ubDIs5O4NP"
+                src="/Gestion.jpg"
                 alt="Captain in bridge"
                 referrerPolicy="no-referrer"
               />
@@ -134,7 +134,7 @@ export default function Services() {
               <div className="aspect-[3/4] overflow-hidden">
                 <img
                   className="w-full h-full object-cover"
-                  src="https://images.unsplash.com/photo-1548115184-bc6544d06c58?q=80&w=2070"
+                  src="/refit.jpg"
                   alt="Yacht refit and woodwork maintenance detail"
                   referrerPolicy="no-referrer"
                 />
@@ -182,7 +182,7 @@ export default function Services() {
               </div>
 
               <p className="text-primary/70 font-light leading-relaxed mb-12">
-                Disfrute del mar durante el día con total comodidad. Ideal para escapadas, celebraciones o desconectar. Nos encargamos de todo para que solo tenga que disfrutar.
+                Disfruta del mar durante el día con total comodidad. Ideal para escapadas, celebraciones o desconectar. Nos encargamos de todo para que solo tengas que disfrutar.
               </p>
 
               <Link to="/contacto" className="inline-block border-b border-primary pb-1 text-sm font-bold uppercase tracking-wider hover:text-on-tertiary-container hover:border-on-tertiary-container transition-colors font-label">
@@ -201,7 +201,7 @@ export default function Services() {
               </div>
 
               <p className="text-primary/70 font-light leading-relaxed mb-12">
-                Viva una experiencia completa a bordo. Diseñamos travesías personalizadas con rutas, tripulación y servicios adaptados a sus preferencias.
+                Vive una experiencia completa a bordo. Diseñamos travesías personalizadas con rutas, tripulación y servicios adaptados a tus preferencias.
               </p>
 
               <Link to="/contacto" className="inline-block border-b border-primary pb-1 text-sm font-bold uppercase tracking-wider hover:text-on-tertiary-container hover:border-on-tertiary-container transition-colors font-label">
@@ -222,12 +222,12 @@ export default function Services() {
             <div className="space-y-6">
               <span className="font-headline text-5xl opacity-20">01</span>
               <h4 className="font-bold tracking-widest uppercase text-xs border-b border-surface/10 pb-4 font-label">Asesoramiento</h4>
-              <p className="text-surface/70 text-sm leading-loose">Analizamos sus necesidades: tipo de embarcación, uso, presupuesto y objetivos.</p>
+              <p className="text-surface/70 text-sm leading-loose">Analizamos tus necesidades: tipo de embarcación, uso, presupuesto y objetivos.</p>
             </div>
             <div className="space-y-6">
               <span className="font-headline text-5xl opacity-20">02</span>
               <h4 className="font-bold tracking-widest uppercase text-xs border-b border-surface/10 pb-4 font-label">Selección</h4>
-              <p className="text-surface/70 text-sm leading-loose">Le presentamos opciones contrastadas, optimizando tiempo y evitando decisiones innecesarias.</p>
+              <p className="text-surface/70 text-sm leading-loose">Te presentamos opciones contrastadas, optimizando tiempo y evitando decisiones innecesarias.</p>
             </div>
             <div className="space-y-6">
               <span className="font-headline text-5xl opacity-20">03</span>
@@ -237,7 +237,7 @@ export default function Services() {
             <div className="space-y-6">
               <span className="font-headline text-5xl opacity-20">04</span>
               <h4 className="font-bold tracking-widest uppercase text-xs border-b border-surface/10 pb-4 font-label">Seguimiento</h4>
-              <p className="text-surface/70 text-sm leading-loose">Continuamos a su lado con soporte, mantenimiento y mejora continua.</p>
+              <p className="text-surface/70 text-sm leading-loose">Continuamos a tu lado con soporte, mantenimiento y mejora continua.</p>
             </div>
           </div>
         </div>
@@ -246,8 +246,8 @@ export default function Services() {
       {/* Final CTA Section */}
       <section className="py-32 md:py-40 bg-surface text-center">
         <div className="max-w-3xl mx-auto px-6 md:px-12">
-          <h2 className="font-headline text-5xl md:text-7xl text-primary mb-12 italic leading-[1.1]">Su barco, en las <br />mejores manos</h2>
-          <p className="text-primary/60 mb-16 text-lg md:text-xl font-light">Contacte con nosotros y descubra una forma más sencilla y profesional de gestionar y disfrutar del mar.</p>
+          <h2 className="font-headline text-5xl md:text-7xl text-primary mb-12 italic leading-[1.1]">Tu barco, en las <br />mejores manos</h2>
+          <p className="text-primary/60 mb-16 text-lg md:text-xl font-light">Contacta con nosotros y descubre una forma más sencilla y profesional de gestionar y disfrutar del mar.</p>
           <div className="flex flex-col md:flex-row gap-6 justify-center">
             <Link to="/contacto" className="cta-gradient text-on-primary px-12 py-5 font-bold uppercase tracking-widest text-xs rounded transition-all hover:opacity-90 font-label">Solicitar consultoría</Link>
           </div>
