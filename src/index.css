@@ -1,43 +1,43 @@
 @import "tailwindcss";
 
 @theme {
-  --font-headline: "Noto Serif", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  --font-body: "Manrope", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-label: "Manrope", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-headline: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-body: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-label: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
-  --color-primary: #001325;
-  --color-primary-container: #052844;
+  --color-primary: #3b3531;
+  --color-primary-container: #4a443f;
   --color-on-primary: #ffffff;
-  --color-secondary: #44617c;
-  --color-on-secondary-container: #46647e;
-  --color-tertiary: #001320;
-  --color-on-tertiary-container: #00ADF8;
-  --color-surface: #faf9f5;
-  --color-on-surface: #1a1c1a;
-  --color-on-surface-variant: #43474d;
+  --color-secondary: #cc0000;
+  --color-on-secondary-container: #aa0000;
+  --color-tertiary: #1e2022;
+  --color-on-tertiary-container: #ffffff;
+  --color-surface: #ffffff;
+  --color-on-surface: #111827;
+  --color-on-surface-variant: #6b7280;
   --color-surface-container-lowest: #ffffff;
-  --color-surface-container-low: #f4f4f0;
-  --color-surface-container: #eeeeea;
-  --color-surface-container-high: #e8e8e4;
-  --color-surface-container-highest: #e2e3df;
-  --color-outline: #73777e;
-  --color-outline-variant: #c3c7ce;
+  --color-surface-container-low: #f9fafb;
+  --color-surface-container: #f3f4f6;
+  --color-surface-container-high: #e5e7eb;
+  --color-surface-container-highest: #d1d5db;
+  --color-outline: #e5e7eb;
+  --color-outline-variant: #d1d5db;
 }
 
 @layer base {
   body {
-    @apply bg-surface font-body text-primary selection:bg-on-tertiary-container selection:text-surface;
+    @apply bg-surface font-body text-on-surface selection:bg-primary selection:text-surface;
   }
 }
 
 @layer utilities {
   .luxury-input {
-    @apply w-full bg-transparent border-b border-outline-variant py-2 transition-colors font-body focus:outline-none focus:border-[#00ADF8];
+    @apply w-full bg-surface-container border border-outline-variant py-3 px-4 rounded-md transition-colors font-body focus:outline-none focus:border-primary;
   }
   .ghost-border {
-    @apply border border-primary/15;
+    @apply border border-on-surface/10;
   }
   .cta-gradient {
-    @apply bg-gradient-to-br from-primary to-primary-container;
+    @apply bg-primary;
   }
 }

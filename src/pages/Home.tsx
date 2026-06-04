@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+      <section className="relative h-screen w-full flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
             alt="Yate de lujo"
@@ -13,194 +13,309 @@ export default function Home() {
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaPmGqcV2521_6jD_ROItoudv0SWMeZfVmwTv4s7YL8xuTYeK8tn5xG6X_SN6_vgsnLOdqxnj-9OIjUqPsnk_qOzUw9RWtlZPU88xS-Jhr2rsF0s0aTbdGAAOnBEh7rdqS8V9qmzqn5EEfm-T-9FSwFFHnXwJDATrMZAO2LVheF1FKb_rA7jjNG7EBZm6fL1I8CvWeadUOIUd_9U42WregRLLJW7tGobXaEBuq4glWYQ8wxQb9L5lqGMHafJi0s-3LwRLZhWT69b3v"
             referrerPolicy="no-referrer"
           />
-          <div className="absolute inset-0 bg-primary/20"></div>
+          <div className="absolute inset-0 bg-black/40"></div>
         </div>
-        <div className="relative z-10 text-center px-4 max-w-5xl">
-          <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl text-white mb-6 tracking-tight leading-tight">
-            Donde el mar se <br /> convierte en <span className="italic">experiencia</span>
+        <div className="relative z-10 px-6 md:px-24">
+          <span className="text-white tracking-[0.2em] uppercase text-xs font-semibold mb-4 block">
+            MÁS ALLÁ DEL HORIZONTE
+          </span>
+          <h1 className="text-6xl md:text-8xl text-white font-bold mb-4 tracking-tight">
+            BLM1980 Yacht
           </h1>
-          <p className="font-body text-white/90 text-[10px] md:text-sm uppercase tracking-[0.3em] font-light max-w-3xl mx-auto leading-relaxed">
+          <h2 className="text-white tracking-[0.1em] uppercase text-sm md:text-md mb-6 font-semibold">
+            Donde el mar se convierte en experiencia
+          </h2>
+          <p className="text-white/90 text-sm md:text-base max-w-xl mb-12 leading-relaxed uppercase">
             CHÁRTER, COMPRAVENTA, REFIT Y GESTIÓN INTEGRAL DE EMBARCACIONES CON MÁS DE 20 AÑOS DE EXPERIENCIA.
           </p>
-        </div>
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 text-white/60">
-          <span className="text-[10px] uppercase tracking-[0.5em] font-label">Deslizar para explorar</span>
-          <div className="w-px h-12 bg-white/30"></div>
+          <Link
+            to="/servicios"
+            className="inline-block bg-[#3b3531] text-white px-8 py-4 uppercase tracking-widest text-xs font-medium rounded hover:bg-[#2d2825] transition-colors"
+          >
+            CONÓCENOS MÁS <span className="ml-2">▶</span>
+          </Link>
         </div>
       </section>
 
       {/* Brand Presentation Block */}
-      <section className="bg-surface py-32 md:py-48 px-6">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-y-12">
-          <div className="md:col-span-5 flex flex-col justify-center">
-            <h2 className="font-headline text-4xl md:text-6xl mb-8 leading-tight">
-              Experiencia que <br />se nota en cada travesía.
+      <section className="bg-white py-24 px-6 relative overflow-hidden">
+        {/* Background compass/rose detail hint */}
+        <div className="absolute top-48 left-16 md:left-48 w-96 h-96 bg-gray-100 rounded-full opacity-30 select-none z-0 pointer-events-none flex items-center justify-center">
+            <span className="text-8xl text-gray-200">✛</span>
+        </div>
+        
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 relative z-10">
+          <div className="flex flex-col justify-center">
+            <div className="flex items-center gap-4 mb-4">
+              <span className="text-xs uppercase tracking-widest text-gray-600 font-semibold">
+                SOBRE NOSOTROS
+              </span>
+              <div className="w-12 h-[1px] bg-gray-600"></div>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gray-900">
+              ¿Quiénes somos?
             </h2>
-            <div className="w-24 h-px bg-primary mb-8"></div>
-            <p className="text-on-surface-variant leading-relaxed text-lg mb-8 max-w-md">
-              En BLM1980 Yacht no solo trabajamos con barcos, trabajamos con confianza. Llevamos más de dos décadas ayudando a propietarios y clientes a disfrutar del mar con total tranquilidad. Desde el alquiler de embarcaciones hasta la gestión integral y mantenimiento, ofrecemos un servicio completo, profesional y adaptado a cada necesidad.
-            </p>
+            <div className="space-y-6 text-gray-600 leading-relaxed text-sm md:text-base mb-10">
+              <p>
+                En BLM1980 Yacht no solo trabajamos con barcos, trabajamos con confianza. Llevamos más de dos décadas ayudando a propietarios y clientes a disfrutar del mar con total tranquilidad.
+              </p>
+              <p>
+                Desde el alquiler de embarcaciones hasta la gestión integral y mantenimiento, ofrecemos un servicio completo, profesional y adaptado a cada necesidad.
+              </p>
+              <p>
+                Nuestra misión es hacer de cada travesía una experiencia única, ocupándonos de que todo esté siempre en perfectas condiciones. ¡Tú solo preocúpate de disfrutar!
+              </p>
+            </div>
             <a
               href="#"
-              className="text-primary font-bold uppercase tracking-widest text-xs border-b border-primary/20 pb-2 self-start hover:border-on-tertiary-container hover:text-on-tertiary-container transition-colors font-label"
+              className="inline-block self-start bg-[#3b3531] text-white px-8 py-4 uppercase tracking-widest text-xs font-medium rounded hover:bg-[#2d2825] transition-colors"
             >
-              Nuestra Filosofía
+              MÁS INFORMACIÓN
             </a>
           </div>
-          <div className="md:col-start-7 md:col-span-6 relative">
-            <div className="aspect-[4/5] w-full bg-surface-container-low overflow-hidden">
+          <div className="relative pt-10 px-4 md:px-0">
+            <div className="w-[90%] aspect-[4/3] rounded-[3rem] overflow-hidden ml-auto">
               <img
-                alt="Interior de yate de lujo"
-                className="w-full h-full object-cover scale-110"
+                alt="Catamaran al atardecer"
+                className="w-full h-full object-cover"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlbWcJWMWoA-I79Aprw-6nkYfMjJrpDSv7bqwe3HpF8XHQ6810BjzrHZl2gS9uYxK3jqaZuYCvlf9KX8PrLq8SlCS1RxcNy1PQ2rLzzUExiDSWLSFCDiaaovSET_Axd_quz76vJyRKYrPViVyEGBgQ4AmP19f9wbIFlhQdjmx_mP8o9pvdspkk1QWPAKUA22-TFQg0P8yg5Lwq09MJe40tc4ZJk7dKwC13od13_hKwAhFC8QJVEbmkPTIgQva-ygebrJpQSdZaNnzQ"
                 referrerPolicy="no-referrer"
               />
             </div>
-            <div className="hidden md:block absolute -bottom-12 -left-12 w-64 h-80 bg-surface-container-highest z-[-1]"></div>
+            <div className="absolute -bottom-8 right-0 md:-left-8 w-48 aspect-[3/4] border-4 border-white rounded-[1.5rem] overflow-hidden z-20">
+              <img
+                alt="Patrón conduciendo"
+                className="w-full h-full object-cover"
+                src="/Charter.jpg"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Stats Row */}
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 mt-32 text-center relative z-10">
+          <div>
+            <span className="text-5xl font-bold text-gray-900 block mb-2">20<span className="text-3xl">+</span></span>
+            <span className="text-sm text-gray-600">Años de experiencia</span>
+          </div>
+          <div>
+            <span className="text-5xl font-bold text-gray-900 block mb-2">50<span className="text-3xl">+</span></span>
+            <span className="text-sm text-gray-600">Barcos gestionados</span>
+          </div>
+          <div>
+            <span className="text-5xl font-bold text-gray-900 block mb-2">+500</span>
+            <span className="text-sm text-gray-600">Clientes satisfechos</span>
           </div>
         </div>
       </section>
 
-      {/* Core Services Section (Tonal Shift) */}
-      <section className="bg-surface-container-low py-32 px-6">
+      {/* Core Services Section */}
+      <section className="bg-white py-24 px-6 md:px-12">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
-            <div>
-              <span className="text-on-tertiary-container font-bold uppercase tracking-[0.3em] text-xs mb-4 block font-label">
-                Nuestros Servicios
-              </span>
-              <h2 className="font-headline text-4xl md:text-5xl">Servicios Integrales</h2>
-            </div>
-            <p className="max-w-sm text-on-surface-variant font-light">
-              Soluciones completas y profesionales para disfrutar del mar con total tranquilidad.
-            </p>
+          <div className="text-center mb-16">
+            <span className="text-xs uppercase tracking-widest text-gray-500 font-semibold mb-2 block">
+              ¿QUÉ OFRECEMOS?
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Servicios destacados</h2>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Charter */}
-            <Link to="/servicios" className="group cursor-pointer block">
-              <div className="aspect-[3/4] overflow-hidden mb-8">
+            <div className="flex flex-col">
+              <div className="aspect-[4/3] rounded-[2rem] overflow-hidden mb-6 bg-gray-100">
                 <img
                   alt="Servicio de Chárter"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3-zHtTlR-XxyW5JlRSrKe09aU44ptXc9LaqnDie7P_8NoSyIFxgQGH4-tGCGxYoKipgAmM_sY2klgfm_6lGehDUBG7vJbGmnwMYt0Zs0B1uWQzq4bsk-1tCbQ-lE7f1XMR8sH3DiGId5I0OC5bbYIvChizZs6ee5Gr8qurkc63_4FfM2RAlXs1ekKUhk16BU6DmPp48ICkbTDFkaSzzwZHtYQmtdVeyVcpoH9qosFFqipVvWuz4kwy8SYreQ7RoKt7kQK6PB7L0wB"
+                  className="w-full h-full object-cover"
+                  src="/corretaje.jpg"
                   referrerPolicy="no-referrer"
                 />
               </div>
-              <h3 className="font-headline text-2xl mb-4">Chárter</h3>
-              <p className="text-on-surface-variant mb-6 font-light leading-relaxed">
-                Alquiler de embarcaciones y experiencias a medida, desde salidas de día hasta travesías completas.
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Chárter</h3>
+              <p className="text-gray-600 mb-6 text-sm flex-grow">
+                Alquiler de embarcaciones y experiencias a medida, desde salidas de día hasta travesías completas. Disfruta con total tranquilidad.
               </p>
-              <ArrowRight className="text-primary group-hover:translate-x-2 transition-transform w-6 h-6" />
-            </Link>
-
-            {/* Sales */}
-            <Link to="/servicios" className="group cursor-pointer block md:mt-12 lg:mt-16">
-              <div className="aspect-[3/4] overflow-hidden mb-8">
-                <img
-                  alt="Servicio de Venta"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDl1YRdevG80xFnX_lj76rvWYnmBbBsfvcDoG0VQhP4eKy5t5ferJpSx895lC_PSvUyYqH1KPoqkLQ5sHwc5IBilUwOQ3MfaOwgYyFthM-9VZZ7bfysunISNKDJNIoI9wunY6vnblZHi70ERiqryM1_c6WdGrLoHsf8GxcV_cFBqYyVY0eCBQqgi6HTz_TRg8Wn6vWjiq5PYoZC17kZNnJWKmngKAtpuK-v0d4t7qBWrbwmuaE2F7mo5vQOVYjpzhTVb_ApPfrjfEMm"
-                  referrerPolicy="no-referrer"
-                />
-              </div>
-              <h3 className="font-headline text-2xl mb-4">Venta y Corretaje</h3>
-              <p className="text-on-surface-variant mb-6 font-light leading-relaxed">
-                Asesoramiento experto para comprar o vender tu embarcación con total seguridad.
-              </p>
-              <ArrowRight className="text-primary group-hover:translate-x-2 transition-transform w-6 h-6" />
-            </Link>
-
-            {/* Management */}
-            <Link to="/servicios" className="group cursor-pointer block">
-              <div className="aspect-[3/4] overflow-hidden mb-8">
-                <img
-                  alt="Servicio de Gestión"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZrJ69L5h0kxvsb6LRROujPvwGzq_O9-gnVoBzh35dpoBE_eLQ_hQIe_1JSidHxDbSHyhxigVVS64sDEixXY0EeMG7jVAIEjneqo77Jdwr5R3ti30-X2XPJhoCLNuO3dbSUv0YsyGkgzk_Hx-TBzXBXRiu_cOFVjOGOkGE0QfwuuZM8c146ZwrN0gRQmFIoWmrXa7CXTVRzMY8NsmgqalMtvRJ7kTlWsAUYMX7GLNIsBCCEV0JLrFVzLhWE8UzQJiabqPLCx8lm8hN"
-                  referrerPolicy="no-referrer"
-                />
-              </div>
-              <h3 className="font-headline text-2xl mb-4">Gestión técnica y operativa</h3>
-              <p className="text-on-surface-variant mb-6 font-light leading-relaxed">
-                Gestión integral de barcos: mantenimiento, tripulación, amarre y control operativo.
-              </p>
-              <ArrowRight className="text-primary group-hover:translate-x-2 transition-transform w-6 h-6" />
-            </Link>
-
-            {/* Refit y Mantenimiento */}
-            <Link to="/servicios" className="group cursor-pointer block md:mt-12 lg:mt-16">
-              <div className="aspect-[3/4] overflow-hidden mb-8">
-                <img
-                  alt="Servicio de Refit y Mantenimiento"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  src="https://images.unsplash.com/photo-1551608405-3e289bf53b93?q=80&w=2030"
-                  referrerPolicy="no-referrer"
-                />
-              </div>
-              <h3 className="font-headline text-2xl mb-4">Refit y Mantenimiento</h3>
-              <p className="text-on-surface-variant mb-6 font-light leading-relaxed">
-                Reformas, mantenimiento técnico y puesta a punto para garantizar el máximo rendimiento y durabilidad.
-              </p>
-              <ArrowRight className="text-primary group-hover:translate-x-2 transition-transform w-6 h-6" />
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Process/Methodology Section */}
-      <section className="py-20 md:py-32 bg-primary-container text-surface">
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
-          <div className="text-center mb-16 md:mb-24">
-            <h2 className="font-headline text-4xl md:text-5xl mb-6">Nuestro método de trabajo</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
-            <div className="space-y-6">
-              <span className="font-headline text-5xl opacity-20">01</span>
-              <h4 className="font-bold tracking-widest uppercase text-xs border-b border-surface/10 pb-4 font-label">Asesoramiento</h4>
-              <p className="text-surface/70 text-sm leading-loose">Analizamos tus necesidades: tipo de embarcación, uso, presupuesto y objetivos.</p>
+              <Link to="/servicios" className="self-start bg-[#3b3531] text-white px-6 py-3 uppercase tracking-widest text-xs font-medium rounded hover:bg-[#2d2825] transition-colors">
+                MÁS INFORMACIÓN
+              </Link>
             </div>
-            <div className="space-y-6">
-              <span className="font-headline text-5xl opacity-20">02</span>
-              <h4 className="font-bold tracking-widest uppercase text-xs border-b border-surface/10 pb-4 font-label">Selección</h4>
-              <p className="text-surface/70 text-sm leading-loose">Te presentamos opciones contrastadas, optimizando tiempo y evitando decisiones innecesarias.</p>
+
+            {/* Venta y Corretaje */}
+            <div className="flex flex-col">
+              <div className="aspect-[4/3] rounded-[2rem] overflow-hidden mb-6 bg-gray-100">
+                <img
+                  alt="Venta y Corretaje"
+                  className="w-full h-full object-cover"
+                  src="/Gestion.jpg"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Venta y Corretaje</h3>
+              <p className="text-gray-600 mb-6 text-sm flex-grow">
+                Asesoramiento experto para comprar o vender tu embarcación con total seguridad. Maximizamos el valor y minimizamos el tiempo de gestión.
+              </p>
+              <Link to="/servicios" className="self-start bg-[#3b3531] text-white px-6 py-3 uppercase tracking-widest text-xs font-medium rounded hover:bg-[#2d2825] transition-colors">
+                MÁS INFORMACIÓN
+              </Link>
             </div>
-            <div className="space-y-6">
-              <span className="font-headline text-5xl opacity-20">03</span>
-              <h4 className="font-bold tracking-widest uppercase text-xs border-b border-surface/10 pb-4 font-label">Gestión y Mante.</h4>
-              <p className="text-surface/70 text-sm leading-loose">Coordinamos toda la operativa: contratos, logística, mantenimiento y refit.</p>
-            </div>
-            <div className="space-y-6">
-              <span className="font-headline text-5xl opacity-20">04</span>
-              <h4 className="font-bold tracking-widest uppercase text-xs border-b border-surface/10 pb-4 font-label">Seguimiento</h4>
-              <p className="text-surface/70 text-sm leading-loose">Continuamos a tu lado con soporte, mantenimiento y mejora continua.</p>
+
+            {/* Gestión Técnica */}
+            <div className="flex flex-col">
+              <div className="aspect-[4/3] rounded-[2rem] overflow-hidden mb-6 bg-gray-100">
+                <img
+                  alt="Gestión técnica y operativa"
+                  className="w-full h-full object-cover"
+                  src="/refit.jpg"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Gestión técnica</h3>
+              <p className="text-gray-600 mb-6 text-sm flex-grow">
+                Gestión integral de barcos: mantenimiento, tripulación, amarre y control operativo. Deja las preocupaciones en nuestras manos.
+              </p>
+              <Link to="/servicios" className="self-start bg-[#3b3531] text-white px-6 py-3 uppercase tracking-widest text-xs font-medium rounded hover:bg-[#2d2825] transition-colors">
+                MÁS INFORMACIÓN
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Final CTA Section */}
-      <section className="relative py-48 px-6 overflow-hidden bg-primary-container text-on-primary">
-        <div className="absolute inset-0 opacity-30">
-          <img
-            alt="Superficie del mar"
-            className="w-full h-full object-cover"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFs3kzCREk5jxLNOs0XIfgqEvZIvcCHpMAI7DSkWaKVRVhlTH44SIFja8Qgq5VjcYz4hoNpb0XexbojzHuZvuursaeIp1vI7cA7HPYc3nA3VM1xpYcOVsm0dwb1hY1oOFSs-gWblce6h1dhf_PY9BPr4thD5h538LHIwbmLVCd99AH-hYe17PX20rJCJ2bn7vDhnORNGafympP3cQbAjJgSzxvpFaFVMRz0XENsMgo4w8TNBsbIO8Jc5Bf-gX6A1oDeefqrT2bZQzd"
-            referrerPolicy="no-referrer"
-          />
+      {/* Destacados / Info */}
+      <section className="bg-white py-24 px-6 md:px-12 border-t border-gray-100">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+          {/* Article 1 */}
+          <div className="flex flex-col">
+            <div className="aspect-[4/3] w-full overflow-hidden mb-6">
+              <img
+                alt="Refit y puesta a punto"
+                className="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3-zHtTlR-XxyW5JlRSrKe09aU44ptXc9LaqnDie7P_8NoSyIFxgQGH4-tGCGxYoKipgAmM_sY2klgfm_6lGehDUBG7vJbGmnwMYt0Zs0B1uWQzq4bsk-1tCbQ-lE7f1XMR8sH3DiGId5I0OC5bbYIvChizZs6ee5Gr8qurkc63_4FfM2RAlXs1ekKUhk16BU6DmPp48ICkbTDFkaSzzwZHtYQmtdVeyVcpoH9qosFFqipVvWuz4kwy8SYreQ7RoKt7kQK6PB7L0wB"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+            <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">Nuestro método de trabajo</h3>
+            <div className="text-gray-600 text-sm space-y-4 mb-6 text-center md:text-left">
+              <p>Analizamos tus necesidades reales: el tipo de embarcación soñado, el presupuesto y los objetivos a corto o largo plazo.</p>
+              <p>Te presentamos opciones contrastadas, optimizando tiempo y evitando decisiones innecesarias o gastos imprevistos, gestionando cualquier tipo de refit o modernización antes de la entrega final.</p>
+            </div>
+            <a href="#" className="text-red-700 font-semibold text-sm hover:text-red-800 transition-colors text-center md:text-left">Leer más</a>
+          </div>
+
+          {/* Article 2 */}
+          <div className="flex flex-col">
+            <div className="aspect-[4/3] w-full overflow-hidden mb-6">
+              <img
+                alt="Tranquilidad total"
+                className="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDl1YRdevG80xFnX_lj76rvWYnmBbBsfvcDoG0VQhP4eKy5t5ferJpSx895lC_PSvUyYqH1KPoqkLQ5sHwc5IBilUwOQ3MfaOwgYyFthM-9VZZ7bfysunISNKDJNIoI9wunY6vnblZHi70ERiqryM1_c6WdGrLoHsf8GxcV_cFBqYyVY0eCBQqgi6HTz_TRg8Wn6vWjiq5PYoZC17kZNnJWKmngKAtpuK-v0d4t7qBWrbwmuaE2F7mo5vQOVYjpzhTVb_ApPfrjfEMm"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+            <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">Tu barco siempre en las mejores manos</h3>
+            <div className="text-gray-600 text-sm space-y-4 mb-6 text-center md:text-left">
+              <p>En BLM1980 Yacht planificamos cuidadosamente todas las operativas para la seguridad y el disfrute completo de nuestros clientes.</p>
+              <p>Desde el mantenimiento preventivo, revisiones de seguridad, control operativo continuado, hasta el servicio técnico de respuesta rápida. Todo está pensado para que tu embarcación sea sinónimo de disfrute, y no de problemas.</p>
+            </div>
+            <a href="#" className="text-red-700 font-semibold text-sm hover:text-red-800 transition-colors text-center md:text-left">Leer más</a>
+          </div>
         </div>
-        <div className="relative z-10 max-w-4xl mx-auto text-center">
-          <h2 className="font-headline text-4xl md:text-7xl mb-12 leading-tight">
-            Tu barco, en las <span className="italic">mejores manos</span>
-          </h2>
-          <p className="text-white/80 mb-12 text-lg md:text-xl font-light">Contacta con nosotros y descubre una forma más sencilla y profesional de gestionar y disfrutar del mar.</p>
-          <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
-            <Link
-              to="/contacto"
-              className="w-full md:w-auto bg-[#faf9f5] text-[#001325] px-12 py-5 uppercase tracking-widest text-sm font-bold hover:bg-secondary-container transition-colors font-label"
-            >
-              Solicitar consultoría
-            </Link>
+      </section>
+
+      {/* Contact Section */}
+      <section className="bg-white py-24 px-6 md:px-12">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 md:bg-[#f4f3ef] md:rounded-[3rem] overflow-hidden">
+          
+          {/* Form Side */}
+          <div className="md:col-span-8 p-8 md:p-16">
+            <div className="flex items-center gap-4 mb-4">
+              <span className="text-xs uppercase tracking-widest text-gray-600 font-semibold">CONTACTO</span>
+              <div className="w-12 h-[1px] bg-gray-600"></div>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 border-b-2 border-transparent border-t-0 border-r-0 border-l-0">¿Necesitas más información?</h2>
+            <p className="text-gray-600 mb-10 text-sm">
+              Envíanos un email o llámanos para solicitar más información y te ayudaremos a resolver cualquier duda y/o consulta que tengas a la brevedad.
+            </p>
+            
+            <form className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label className="block text-xs uppercase tracking-widest text-gray-600 mb-2 font-semibold">NOMBRE</label>
+                  <input type="text" className="w-full bg-[#ebeae6] border-none rounded p-3 focus:ring-2 focus:ring-gray-300 outline-none transition-all" />
+                </div>
+                <div>
+                  <label className="block text-xs uppercase tracking-widest text-gray-600 mb-2 font-semibold">APELLIDO</label>
+                  <input type="text" className="w-full bg-[#ebeae6] border-none rounded p-3 focus:ring-2 focus:ring-gray-300 outline-none transition-all" />
+                </div>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label className="block text-xs uppercase tracking-widest text-gray-600 mb-2 font-semibold">EMAIL</label>
+                  <input type="email" className="w-full bg-[#ebeae6] border-none rounded p-3 focus:ring-2 focus:ring-gray-300 outline-none transition-all" />
+                </div>
+                <div>
+                  <label className="block text-xs uppercase tracking-widest text-gray-600 mb-2 font-semibold">TELÉFONO</label>
+                  <input type="tel" className="w-full bg-[#ebeae6] border-none rounded p-3 focus:ring-2 focus:ring-gray-300 outline-none transition-all" />
+                </div>
+              </div>
+              <div>
+                <label className="block text-xs uppercase tracking-widest text-gray-600 mb-2 font-semibold">¿EN QUÉ PODEMOS AYUDARTE?</label>
+                <textarea rows={4} className="w-full bg-[#ebeae6] border-none rounded p-3 focus:ring-2 focus:ring-gray-300 outline-none transition-all resize-none"></textarea>
+              </div>
+              <div className="flex items-start gap-3 mt-4">
+                <input type="checkbox" id="privacy" className="mt-1 border-gray-300 rounded text-gray-900 focus:ring-gray-900" />
+                <label htmlFor="privacy" className="text-xs text-gray-600 uppercase tracking-widest leading-relaxed">
+                  ANTES DE FIRMAR/ENVIAR TU SOLICITUD, LEA Y ACEPTE NUESTRA INFORMACIÓN BÁSICA SOBRE PROTECCIÓN DE DATOS, CONTENIDA EN NUESTRA POLÍTICAS DE PRIVACIDAD
+                </label>
+              </div>
+              <button type="submit" className="bg-[#3b3531] text-white px-8 py-4 uppercase tracking-widest text-xs font-medium rounded hover:bg-[#2d2825] transition-colors mt-6">
+                ENVIAR CONSULTA <span className="ml-2">→</span>
+              </button>
+            </form>
+          </div>
+
+          {/* Contact Info Side */}
+          <div className="md:col-span-4 bg-[#ebeae6] p-8 md:p-16 flex flex-col justify-center items-center text-center space-y-12">
+            <div>
+              <div className="w-12 h-12 bg-[#3b3531] rounded-full text-white flex items-center justify-center mx-auto mb-4">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+              </div>
+              <h4 className="font-bold text-gray-900 mb-1 flex items-center justify-center gap-1">Teléfono</h4>
+              <a href="tel:+34948040013" className="text-sm text-gray-600 hover:text-gray-900">+34 948 04 00 13</a>
+            </div>
+            
+            <div>
+              <div className="w-12 h-12 bg-[#3b3531] rounded-full text-white flex items-center justify-center mx-auto mb-4">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+              </div>
+              <h4 className="font-bold text-gray-900 mb-1 flex items-center justify-center gap-1">Teléfono</h4>
+              <a href="tel:+34635859709" className="text-sm text-gray-600 hover:text-gray-900">+34 635 85 97 09</a>
+            </div>
+
+            <div>
+              <div className="w-12 h-12 bg-[#3b3531] rounded-full text-white flex items-center justify-center mx-auto mb-4">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+              </div>
+              <h4 className="font-bold text-gray-900 mb-1 flex items-center justify-center gap-1">Teléfono</h4>
+              <a href="tel:+34655358662" className="text-sm text-gray-600 hover:text-gray-900">+34 655 35 86 62</a>
+            </div>
+
+            <div>
+              <div className="w-12 h-12 bg-[#3b3531] rounded-full text-white flex items-center justify-center mx-auto mb-4">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+              </div>
+              <h4 className="font-bold text-gray-900 mb-1 flex items-center justify-center gap-1">Email</h4>
+              <a href="mailto:info@blm1980yacht.com" className="text-sm text-gray-600 hover:text-gray-900">info@blm1980yacht.com</a>
+            </div>
+
+            <div className="flex justify-center gap-4 pt-4">
+              <a href="#" className="w-8 h-8 bg-blue-600 text-white rounded flex items-center justify-center hover:bg-blue-700 transition">
+                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a href="#" className="w-8 h-8 bg-gray-900 text-white rounded flex items-center justify-center hover:bg-black transition">
+                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+              </a>
+            </div>
           </div>
         </div>
       </section>
